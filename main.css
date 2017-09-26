@@ -1,0 +1,117 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 910px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-left {
+    text-align: end;
+}
+
+hr {
+    color: #7d97ad;
+    background-color: #7d97ad;
+    width: 100%;
+    border: none;
+    height: 5px;
+    margin-bottom: 2vh;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+h2 {
+    color: #2d3c49;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    color: #7d97ad;
+}
+
+a {
+    color: #2d3c49
+}
+
+.about {
+    width: 50%;
+}
+
+.col-3 {
+    width: 33.3333333%;
+}
+
+.logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.project-list, .hero, .caption {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.logo > img {
+    width:60px;
+    height:60px
+}
+
+.caption {
+    flex-wrap: nowrap;
+}
+
+.project {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-grow: 1;
+}
+
+.project:first-child {
+    padding-left: 0;
+}
+
+.project:last-child {
+    padding-right: 0;
+}
+
+.text-center {
+    text-align: center;
+    display: block;
+}
+
+
+@media screen and (max-width: 900px){
+    body {
+    font-family: 'Roboto', sans-serif;
+        width: 100%;
+}
+
+    .project {
+        padding-left: 0;
+        padding-right: 0;
+        flex-grow: 1;
+    }
+
+    .logo {
+        display:none;
+    }
+
+    .about {
+        width: 95%;
+    }
+
+
+}
