@@ -1,21 +1,16 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     width: 910px;
     margin: auto;
 }
 
-header {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.text-left {
-    text-align: end;
+img {
+    width: 100%;
 }
 
 hr {
     color: #7d97ad;
-    background-color: #7d97ad;
+    background: #7d97ad;
     width: 100%;
     border: none;
     height: 5px;
@@ -37,15 +32,19 @@ h3 {
 }
 
 a {
-    color: #2d3c49
+    color: #2d3c49;
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about {
     width: 50%;
-}
-
-.col-3 {
-    width: 33.3333333%;
+    text-align: end;
 }
 
 .logo {
@@ -54,19 +53,18 @@ a {
     align-items: center;
 }
 
-.project-list, .hero, .caption {
+#udacity-logo {
+    width: 60px;
+    height: 60px;
+}
+
+/*Body*/
+.project-list,
+.hero,
+.caption {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-}
-
-img {
-    width: 100%;
-}
-
-.logo > img {
-    width:60px;
-    height:60px
 }
 
 .caption {
@@ -92,26 +90,24 @@ img {
     display: block;
 }
 
-
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
     body {
-    font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         width: 100%;
-}
+    }
 
-    .project {
-        padding-left: 0;
-        padding-right: 0;
-        flex-grow: 1;
+    /*Header*/
+    .about {
+        width: 75%;
     }
 
     .logo {
-        display:none;
+        width: 20%;
     }
 
-    .about {
-        width: 95%;
+    /*Body*/
+    .project {
+        padding: 0;
+        flex-grow: 1;
     }
-
-
 }
