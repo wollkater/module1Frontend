@@ -67,7 +67,8 @@ header {
     width: 100%;
 }
 
-.hero {
+.hero,
+.project{
     align-items: center;
 }
 
